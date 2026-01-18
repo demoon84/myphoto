@@ -1,0 +1,46 @@
+# --- MyPhoto AI Agent Optimization ---
+
+# 1. 테스트용 사진 폴더 (가장 중요!)
+# 프로젝트 내부 폴더에 사진을 넣고 테스트할 경우 반드시 제외해야 합니다.
+from/
+to/
+temp_photos/
+test_images/
+
+# 2. 파이썬 가상환경 및 라이브러리
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 3. 노드 패키지 (JS 라이브러리)
+node_modules/
+.pnpm-store/
+
+# 4. 빌드 결과물 및 배포 파일
+dist/
+out/
+build/
+*.exe
+*.dmg
+*.AppImage
+
+# 5. 데이터베이스 및 로그
+*.db
+*.sqlite3
+logs/
+*.log
+
+# 6. OS 전용 캐시 파일
+.DS_Store
+Thumbs.db
+
+
+.idea
+
+# PyInstaller Artifacts
+backend/dist/
+backend/build/
+backend/*.spec

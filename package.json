@@ -1,0 +1,58 @@
+{
+  "name": "myphoto",
+  "version": "1.0.0",
+  "main": "./out/main/main.js",
+  "scripts": {
+    "dev": "electron-vite dev",
+    "build": "electron-vite build",
+    "preview": "electron-vite preview",
+    "start": "electron-vite preview",
+    "typecheck": "tsc --noEmit",
+    "dist": "npm run build && electron-builder"
+  },
+  "keywords": [],
+  "author": "Moon kyungtae",
+  "build": {
+    "appId": "com.myphoto.app",
+    "mac": {
+      "icon": "build/icon.png",
+      "target": "dmg"
+    },
+    "win": {
+      "icon": "build/icon.png"
+    },
+    "files": [
+      "out/**/*",
+      "backend/**/*"
+    ],
+    "asarUnpack": [
+      "backend/**/*"
+    ]
+  },
+  "license": "ISC",
+  "description": "AI-powered photo organization app",
+  "productName": "MyPhoto",
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.18",
+    "@types/react": "^19.2.8",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.1.2",
+    "autoprefixer": "^10.4.23",
+    "electron": "^31.0.0",
+    "electron-builder": "^24.13.3",
+    "electron-vite": "^5.0.0",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.18",
+    "typescript": "^5.9.3",
+    "vite": "^7.3.1"
+  },
+  "dependencies": {
+    "@electron-toolkit/preload": "^3.0.2",
+    "@electron-toolkit/utils": "^4.0.0",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.562.0",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "tailwind-merge": "^3.4.0"
+  }
+}
